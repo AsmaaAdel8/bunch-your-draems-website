@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body{
+    background-color: rgb(192, 221, 231);
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    #logo{
+        border-radius: 50%;
+    }
+    ul{
+        list-style-type: none;
+        cursor: pointer;
+    }
+    ul li:hover{
+     box-shadow: inset rgb(107, 107, 148) 2px 2px 2px 2px;
+     background-color: burlywood;
+     padding: 10px;
+    }
+    .intro{
+        background: url(../images/logo.jpg) no-repeat fixed ;
+        background-size:100%;
+    }
+    footer{
+        position: fixed;
+        bottom: 0%;
+        width: 100%;
+        color: aliceblue;
+    }
+}
