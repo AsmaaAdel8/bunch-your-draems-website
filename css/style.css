@@ -8,6 +8,7 @@ body{
     background-color: rgb(192, 221, 231);
     text-align: center;
     font-size: 25px;
+    color: azure;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     #logo{
         border-radius: 50%;
@@ -15,6 +16,7 @@ body{
     ul{
         list-style-type: none;
         cursor: pointer;
+       
     }
     ul li:hover{
      box-shadow: inset rgb(107, 107, 148) 2px 2px 2px 2px;
@@ -22,8 +24,31 @@ body{
      padding: 10px;
     }
     .intro{
-        background: url(../images/logo.jpg) no-repeat fixed ;
-        background-size:100%;
+        background: url(../images/b2a60fb71d7826f89cb4e9745a303b4a\(1\).jpg) no-repeat fixed ;
+        background-size:cover;
+        position: relative;
+        height: 100vh;
+    }
+    .intr{
+        position: absolute;
+        width: 10em;
+        left: 0px;
+    }
+    .card{
+        position: relative;
+    }
+    .card::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height:0%;
+        background-color: rgb(0, 0, 0,0.5);
+    }
+    .card:hover::after{
+        height: 100%;
+        width: 100%;
     }
     footer{
         position: fixed;
