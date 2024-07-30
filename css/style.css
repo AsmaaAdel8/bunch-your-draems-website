@@ -9,20 +9,29 @@ body{
     text-align: center;
     font-size: 25px;
     color: azure;
+    overflow-x: hidden;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     #logo{
         border-radius: 50%;
+    }
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        color: #fff;
+    }
+    button{
+        font-size: 35px;
     }
     ul{
         list-style-type: none;
         cursor: pointer;
        
     }
-    ul li:hover{
+    /* ul li:hover{
      box-shadow: inset rgb(107, 107, 148) 2px 2px 2px 2px;
      background-color: burlywood;
      padding: 10px;
-    }
+    } */
     .intro{
         background: url(../images/b2a60fb71d7826f89cb4e9745a303b4a\(1\).jpg) no-repeat fixed ;
         background-size:cover;
@@ -44,6 +53,7 @@ body{
         left: 0;
         width: 50%;
         height:0%;
+        transition: 0.3s;
         background-color: rgb(0, 0, 0,0.5);
     }
     .card:hover::after{

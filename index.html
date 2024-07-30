@@ -13,30 +13,35 @@
 <body>
     <header>
         <div class="container-fluid bg-success">
-          <nav class="row">
-            <div class="d-flex">
+          <nav class="row navbar">
+            <div class="d-flex col-xl-4">
                 <img src="./images/logo.jpg" width="80" height="80" draggable="false" alt="logo" id="logo">
                 <p class="h3 mt-4 mx-2">Bunch Your Dreams</p>
             </div>
-            <div class="info row">
-                <ul class="d-flex mt-3">
+            <div class="info row  col-xl-7 mt-3">
+                <ul class="d-flex col-xl-8">
                     <li class="mx-4"> Home</li>
                     <li class="mx-4">contacts</li>
-                    <li class="mx-4">About us</li>
+                    <li class="mx-4">About</li>
+                    <li class="btn-group mb-2">
+                      <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          products
+                       </button>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href=".products">Couchans</a></li>
+                          <li><a class="dropdown-item" href="#section2">labtop stand</a></li>
+                          <li><a class="dropdown-item" href=".section3">cute rug</a></li>
+                          <li><a class="dropdown-item" href="#rat">cousters</a></li>
+                      </ul>
+                    </li>
+                    <li id="search"><i class="fas fa-search mx-4"></i></li>
                 </ul>
-                <!-- Example single danger button -->
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                      Action
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Separated link</a></li>
-                    </ul>
-                  </div>
+                <div class="col-xl-3">
+                  <a class="ms-1" href="#">signUp</a>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    signIn
+                  </button>
+                </div>
             </div>
         </div>
       </nav>
@@ -53,80 +58,9 @@
         <div class="alert alert-success text-centar" role="alert">
             coushan section!
           </div>
-        <div class="products row">
-            <div class="card col-xl-4 m-2" style="width: 20rem;">
-                <img src="./images/02ae023ffb4eb0ad9b9e005888dc5b4f.jpg" height="523" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div><!-- card1 -->
-            <div class="card col-xl-4 m-2" style="width: 20rem;">
-                <img src="./images/08522ec33875e0d8385de25071b2d6cc.jpg" height="523" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-xl-4 m-2" style="width: 20rem;">
-                <img src="./images/296ed731767f657803527ff63016e69b.jpg" height="523" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-xl-4 m-2" style="width: 20rem;">
-                <img src="./images/1649f66ca7e78764af40dd09ce8542b3.jpg" height="523" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-xl-4 m-2" style="width: 20rem;">
-                <img src="./images/2f39f93cc9ff572e72e4ac95e9d26246.jpg" height="523" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-xl-4 m-2" style="width: 20rem;">
-                <img src="./images/FB_IMG_1715264541303.jpg" height="523" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-xl-4 m-2" style="width: 20rem;">
-                <img src="./images/FB_IMG_1716647607366.jpg" height="523" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-xl-4 m-2" style="width: 20rem;">
-                <img src="./images/FB_IMG_1716647612415.jpg" height="523" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-xl-4 m-2" style="width: 20rem;">
-                <img src="./images/FB_IMG_1717415060109.jpg" height="523" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-xl-4 m-2" style="width: 20rem;">
-                <img src="./images/FB_IMG_1718198826606.jpg" height="523" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-xl-4 m-2" style="width: 20rem;">
-                <img src="./images/FB_IMG_1720390282612.jpg" height="523" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-xl-4 m-2" style="width: 20rem;">
-                <img src="./images/1732d0ace530fa118f71d21e0b29af4f.jpg" height="523" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-        </div>
+        <div class="row" id="products">
+           
+        </div> 
     </section>
     <section>
         <div id="section2" class="container">
@@ -178,106 +112,51 @@
             <div class="alert alert-success text-centar" role="alert">
                 cute rug section!
             </div>
-            <div class="row">
-                <div class="card col-xl-4 m-2" style="width: 20rem;">
-                    <img src="./images/rugs/1pc Cute Heart Shaped Anti-Slip Rug Suitable For Girls' Bedroom, Living Room, Bathroom, Kitchen And Corridor - Soft Thick Area Floor Mat.jpg" height="523" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-xl-4 m-2" style="width: 20rem;">
-                    <img src="./images/rugs/Area Rugs for Bedroom 40 _ 120 CM, Washable Cute and Funny Kids Pets Rug Modern Printed White Irregular Shape Entryway Rug (Area Rugs, 40 _ 120 CM).jpg" height="523" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-xl-4 m-2" style="width: 20rem;">
-                    <img src="./images/rugs/Colorful Patterned Bedside Rug - Oasis _ 24 x 59 (60x150cm).jpg" height="523" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-xl-4 m-2" style="width: 20rem;">
-                    <img src="./images/rugs/Feblilac Cartoon Panda Tufted Bath Mat - D _ 15″x23″ or 40x60 cm.jpg" height="523" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-xl-4 m-2" style="width: 20rem;">
-                    <img src="./images/rugs/Feblilac Grass White Clouds Sky Bath Mat Rug - 15_7x31.jpg" height="523" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-xl-4 m-2" style="width: 20rem;">
-                    <img src="./images/rugs/Full Bloom Art Rug.jpg" height="523" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-xl-4 m-2" style="width: 20rem;">
-                    <img src="./images/rugs/Miffy Rug.jpg" height="523" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-xl-4 m-2" style="width: 20rem;">
-                    <img src="./images/rugs/Odd Future Donut OFGW Pop Art Floor Mat Hypebeast Rugs Living Room Wool Carpet.jpg" height="523" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-xl-4 m-2" style="width: 20rem;">
-                    <img src="./images/rugs/Psychedelic Mushroom Tufted Rug or Wall Hanging _ Toadstool Mushroom Rug.jpg" height="523" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-xl-4 m-2" style="width: 20rem;">
-                    <img src="./images/rugs/Psychedelic Mushroom Tufted Rug or Wall Hanging _ Toadstool Mushroom Rug.jpg" height="523" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-xl-4 m-2" style="width: 20rem;">
-                    <img src="./images/rugs/Red Barrel Studio® Bath Rugs 24”X 31” 31_0 H x 31.jpg" height="523" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-xl-4 m-2" style="width: 20rem;">
-                    <img src="./images/rugs/Seaside Inspired Tufted Rug l Orca Motif l 100_ Handmade Soft & Fluffy l Tufting unique art l Home decor l Housewarming Gift l Custom Rug.jpg" height="523" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-xl-4 m-2" style="width: 20rem;">
-                    <img src="./images/rugs/Seaside Inspired Tufted Rug l Whale Motif l 100_ Handmade Soft & Fluffy l Tufting unique art l Home decor l Housewarming Gift l Custom Rug.jpg" height="523" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-xl-4 m-2" style="width: 20rem;">
-                    <img src="./images/rugs/Tuft Rug Flower _ Hand Tufted Rug, Custom Rug, Soft and Aesthetic, Handmade Gift, Flower Rug.jpg" height="523" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-xl-4 m-2" style="width: 20rem;">
-                    <img src="./images/rugs/Uphome Bathroom Runner Rug Colorful Abstract Leaves Long Bath Mat Non Slip Water Absorbent Boho Bath Rug Soft Microfiber Machine Washable Floor Mats for Tub Bathroom Indoor Doormat,18_x47_.jpg" height="523" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-xl-4 m-2" style="width: 20rem;">
-                    <img src="./images/rugs/Water Rug _ Handmade Tufted Accent Rug _ Bright Doormat.jpg" height="523" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
+            <div class="row" id="rug">
+                
             </div>
         </div>
     </section>
+    <section>
+      <div class="container">
+        <div class="alert alert-success text-centar" role="alert">
+          cousters section!
+      </div>
+        <div id="rat" class="row">
+  
+        </div>
+      </div>
+    </section>
+                                       <!-- login form  -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="color: black;">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">logIn Form</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email"class="form-control-plaintext" id="staticEmail" value="">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">logIn</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <footer class="bg-dark">
         <h2>&copy; this website created by Asmaa Adel Web-development and designes.</h2>
     </footer>
