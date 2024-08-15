@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=768, initial-scale=1.0">
-    <meta name="viewport" content="width=1336, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/favicon.ico" width="32 px" height="32 px" type="image/x-icon">
+    <meta name="viewport" content="width=567, initial-scale=1.0">
+    <meta name="viewport" content="width=1366, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -14,14 +16,14 @@
     <header>
         <div class="container-fluid bg-success">
           <nav class="row navbar">
-            <div class="d-flex col-xl-4">
+            <div class="d-flex col-xl-3">
                 <img src="./images/logo.jpg" width="80" height="80" draggable="false" alt="logo" id="logo">
-                <p class="h3 mt-4 mx-2">Bunch Your Dreams</p>
+                <p class="h3 mt-4 " style="font-size: 25px;">Bunch Your Dreams</p>
             </div>
-            <div class="info row  col-xl-7 mt-3">
+            <div class="info row  col-xl-9 mt-3">
                 <ul class="d-flex col-xl-8">
-                    <li class="mx-4"> Home</li>
-                    <li class="mx-4">contacts</li>
+                    <li class="mx-4 row"><i class="fas fa-home col-4"></i> <p class="col-6">Home</p></li>
+                    <li class="mx-4 row"><i class="far fa-id-badge col-4"></i><p class="col-6">contacts</p></li>
                     <li class="mx-4">About</li>
                     <li class="btn-group mb-2">
                       <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -34,14 +36,15 @@
                           <li><a class="dropdown-item" href="#rat">cousters</a></li>
                       </ul>
                     </li>
-                    <li id="search"><i class="fas fa-search mx-4"></i></li>
-                </ul>
-                <div class="col-xl-3">
-                  <a class="ms-1" href="#">signUp</a>
-                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    signIn
-                  </button>
-                </div>
+                  </ul>
+                  <div class="col-xl-3 row" id="circle">
+                    <div id="sgbtn">
+                      <button type="button" class="btn btn-success" ><a class="ms-1" href="./signup.html">signUp</a></button>
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        signIn
+                      </button>
+                    </div>
+                  </div>
             </div>
         </div>
       </nav>
@@ -55,6 +58,10 @@
         </div>
     </main>
     <section class="container m-auto">
+      <div class="shoping">
+        <p id="card"><i class="fas fa-shopping-cart"></i></p>
+        <p id="counter">0</p>
+      </div>
         <div class="alert alert-success text-centar" role="alert">
             coushan section!
           </div>
@@ -71,37 +78,37 @@
                 <div class="card col-xl-4 m-2" style="width: 20rem;">
                     <img src="./images/927e0e716f6aa7279587207402b21fcc.jpg" height="523" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-primary" id='add'>Add To Card</a>
                     </div>
                 </div>
                 <div class="card col-xl-4 m-2" style="width: 20rem;">
                     <img src="./images/b2a60fb71d7826f89cb4e9745a303b4a(1).jpg" height="523" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-primary" id='add'>Add To Card</a>
                     </div>
                 </div>
                 <div class="card col-xl-4 m-2" style="width: 20rem;">
                     <img src="./images/FLUFFY GROOVY KEYBOARD.jpg" height="523" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-primary" id='add'>Add To Card</a>
                     </div>
                 </div>
                 <div class="card col-xl-4 m-2" style="width: 20rem;">
                     <img src="./images/Hand tuft pink keyboard pad with daisy flowers Daisy keyboard rug Computer desk.jpg" height="523" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-primary" id='add'>Add To Card</a>
                     </div>
                 </div>
                 <div class="card col-xl-4 m-2" style="width: 20rem;">
                     <img src="./images/Tufting rug keypad.jpg" height="523" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-primary" id='add'>Add To Card</a>
                     </div>
                 </div>
                 <div class="card col-xl-4 m-2" style="width: 20rem;">
                     <img src="./images/FyrryPyrry - Etsy.jpg" height="523" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-primary" id='add'>Add To Card</a>
                     </div>
                 </div>
             </div>
@@ -127,40 +134,53 @@
         </div>
       </div>
     </section>
-                                       <!-- login form  -->
-   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content" style="color: black;">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">logIn Form</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="mb-3 row">
-          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-          <div class="col-sm-10">
-            <input type="email"class="form-control-plaintext" id="staticEmail" value="">
+    <section>
+      <!-- login form  -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="text-transform: lowercase !important;">
+            <div class="modal-dialog">
+              <div class="modal-content" style="color: black;">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">logIn Form</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 ms-1 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email"class="form-control" id="staticEmail">
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 ms-1 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" id="login">logIn</button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="mb-3 row">
-          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword">
-          </div>
-        </div>
+            
+    </section>
+    <section>
+      <div id="opin" class="mb-5">
+        <h2 class="text-success">Tell us your feadBack about our products</h2>
+        <textarea name="opinion" id="areatext" cols="70" rows="3" style="width: 60%;"></textarea>
+        <button type="submit" class="btn btn-success p-2 w-25 mt-3 " id="send">send</button>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">logIn</button>
+      <div id="overview" class="row mb-5 justify-center">
+        
       </div>
-    </div>
-  </div>
-</div>
-
+    </section>
     <footer class="bg-dark">
         <h2>&copy; this website created by Asmaa Adel Web-development and designes.</h2>
     </footer>
     <script src="./js/index.js"></script>
+    <script src="./cards.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>

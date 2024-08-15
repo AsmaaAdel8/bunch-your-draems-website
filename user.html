@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=768, initial-scale=1.0">
+    <meta name="viewport" content="width=567, initial-scale=1.0">
+    <meta name="viewport" content="width=1366, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" width="32 px" height="32 px" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>User page</title>
+</head>
+<body>
+    <div class="parent bg-success" style="height:100%;">
+        <div class="row justify-between items-center mb-4" style="border-bottom: black 0.5px solid;">
+            <div id="data" class="col-6" style="border-right: black 0.5px solid;">
+             
+            </div>
+            <div id="pay" class="col-6 mt-5 p-2">
+                <form id="payment-form">
+                    <h2 class="text-dark">Payment Information</h2>
+                    <div>
+                        <label for="card-type">Card Type:</label>
+                        <select id="card-type" name="card-type">
+                          <option value="Visa">Visa</option>
+                          <option value="Mastercard">Mastercard</option>
+                          <option value="American Express">PayPal</option>
+                          <option value="vodafone cash">vodafone cash</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label for="card-number">Card Number:</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
+                      </div>
+                      <div>
+                        <label for="expiration-date">Expiration Date:</label>
+                        <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY">
+                      </div>
+                      <div>
+                        <label for="security-code">Security Code:</label>
+                        <input type="text" id="security-code" name="security-code" placeholder="123">
+                      </div>
+                      <div>
+                        <label for="name-on-card">Name on Card:</label>
+                        <input type="text" id="name-on-card" name="name-on-card" placeholder="John Doe">
+                      </div>
+                    <div>
+                      <label for="billing-address">Billing Address:</label>
+                      <input type="text" id="billing-address" name="billing-address" placeholder="123 Main St">
+                    </div>
+                    <div>
+                      <label for="city">City:</label>
+                      <input type="text" id="city" name="city" placeholder="Anytown">
+                    </div>
+                    <div>
+                      <label for="state">State:</label>
+                      <input type="text" id="state" name="state" placeholder="CA">
+                    </div>
+                    <div>
+                      <label for="zip">Zip:</label>
+                      <input type="text" id="zip" name="zip" placeholder="12345">
+                    </div>
+                    <button type="submit" class="btn" id="subBtn">Submit Payment</button>
+                  </form>
+            </div>
+        </div>
+        <h2 class="text-dark">Selected Images from our site</h2>
+        <div id="choosedCards" class="row mb-4">
+    
+        </div>
+    </div>
+    <script src="./js/user.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
