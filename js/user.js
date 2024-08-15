@@ -21,13 +21,15 @@ dad.innerHTML=`
 // add selected images 
 const imgSrc=localStorage.getItem('Imgsrc');
 const Srcs=imgSrc.split(',');
+// Srcs.shift();
 const choosedCards=document.getElementById('choosedCards');
 // console.log(Srcs);
 Srcs.forEach((src,index)=>{
     choosedCards.innerHTML +=`
-    <img src=${src} height="523" class="col-3" alt="..." style="height:9em;" key=${index}>`
+    <img src=${src} height="523" class="col-3" alt="..." style="height:9em;" dataset=${index}>`
+    // img.dataset.index = index;
 })
-// make payment page
+// make payment page with vodafone cash
 const payDiv=document.getElementById('pay');
 const selectdiv=document.getElementById('card-type');
 const payform=document.getElementById('payment-form');

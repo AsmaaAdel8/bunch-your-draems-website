@@ -24,22 +24,5 @@ document.addEventListener('DOMContentLoaded',function Sign(){
     localStorage.setItem('dataUser',JSON.stringify(dataObj));
     window.location.href='index.html';
 })
-
-// function login(){
-//     let login=document.getElementById('login');
-//     login.addEventListener('click',()=>{
-
-//         const email=document.getElementById('staticEmail').value;
-//         const password=document.getElementById('inputPassword').value;
-//         let{name,emai,passwor,adres,cit,stat,agee,dat}=JSON.parse(localStorage.getItem('dataUser'));
-        
-//         if(email===emai&& password===passwor){
-//             window.location.href='user.html';
-//         }else{
-//             window.alert('your data not fined try again or sign up if it the first time in our website and thank you for your visiting...')
-//         }
-//     })
-// }
-// login();
 }
 )

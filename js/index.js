@@ -4,8 +4,6 @@ function App(){
     let ratDiv=document.getElementById('rat');
     let products=document.getElementById('products');
     let rugDiv=document.getElementById('rug');
-    let overviewdiv=document.getElementsByClassName('overview');
-    let areatext=document.getElementById('areatext');
 
     const imgurl=["DIYSee!.jpg","70shoop.jpg","Customcartoon.jpg","PunchsEtsy.jpg",
         "FihUHARf.jpg","HandmadeGift.jpg","Howembroidery.jpg","Iqzn2G.jpg",
@@ -82,16 +80,7 @@ function App(){
         })
     })
     // for loop to make icons of stars in user opineon card
-    
-    // the event to made search bar when click search icons
-    let search=()=>{
-        return `
-            <form class="d-flex" role="search" style='position: absolute; top:5em;background-color:black;'>
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        `
-    };
+   
     // check if there are user data to make usericon
 
     const storedData = localStorage.getItem('dataUser');
@@ -102,11 +91,11 @@ function App(){
           const circle = document.getElementById('circle');
           if (circle) {
             document.getElementById('sgbtn').style.display = 'none';
-            circle.innerHTML = `<div class='col-7' onclick="window.location.href = 'user.html'">
-                    <i class="fas fa-user-circle" style='font-size:30px;margin-right:15px;'></i>
-                    <h2>${name}</h2>
+            circle.innerHTML = `<div class='col-7 row' onclick="window.location.href = 'user.html'">
+                    <i class="fas fa-user-circle col-4" style='font-size:30px;'></i>
+                    <h2 class="col-6">${name}</h2>
                 </div>
-                <div id="search" class="col-4" style='padding-left:5px; margin-left:17px;' onclick="search()">
+                <div id="search" class="col-4" style='padding-left:5px; margin-left:-7em;'>
                     <i class="fas fa-search"></i>
                 </div>
             `;
@@ -117,22 +106,25 @@ function App(){
 
                 // to tack the text from textarea as opineon card in bottom
             document.getElementById('send').addEventListener('click',()=>{
+              let areatext=document.getElementById('areatext');
                 var textOpin=areatext.value;
-                var usrOpin=JSON.parse(localStorage.getItem('textOpinions'));
-                if (usrOpin === null) {
+                var usrOpin=localStorage.getItem('textOpinions');
+                if (!usrOpin) {
                     usrOpin = [];
+                  }else{
+                    usrOpin=JSON.parse(usrOpin);
                   }
-                  usrOpin.push(textOpin)
-
+                  usrOpin.push(textOpin);
                 const overviewDiv=document.getElementById('overview');
                 if(name){
                     localStorage.setItem('textOpinion',JSON.stringify(usrOpin));
-                    const textOpinion=JSON.parse(localStorage.getItem('textOpinion'));
+                    // const textOpinion=JSON.parse(localStorage.getItem('textOpinion'));
                     let textOpindiv=document.createElement('div');
                     textOpindiv.className='textOpindiv';
                     
-                    if(textOpinion){
-                        textOpindiv.innerHTML=`${textOpinion}
+                    if(usrOpin){
+                      usrOpin.forEach((txt)=>{
+                        textOpindiv.innerHTML=`${txt}
                         <h3>chosse our Rate</h3>
                          <div class='row me-2'>  
                             <i class="far fa-star col-2"></i>
@@ -142,15 +134,13 @@ function App(){
                             <i class="far fa-star col-2"></i>
                         </div>`;
                         overviewDiv.appendChild(textOpindiv)
+                      })
                     }
-
                 }else{
                     window.alert('you should signIn first to can text .');
                     window.location.href='./signup.html'
                 }
-    })
-
-          } else {
+    })} else {
             console.error("Element 'circle' not found in the DOM");
           }
         } else {
@@ -162,7 +152,6 @@ function App(){
     } else {
       console.error("No stored data found");
     }
-    
 
  drowItem();
  drawCoshans();
